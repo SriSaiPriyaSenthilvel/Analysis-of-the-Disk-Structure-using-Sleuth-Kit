@@ -2,22 +2,17 @@
 ## AIM:
 To analyze the disk structure of a given disk image using Sleuth Kit tools in Kali Linux.
 
-## REQUIREMENTS
+## REQUIREMENTS:
 - **Operating System**: Windows 10/11 or Kali Linux
 - **Tools**:  
   - [The Sleuth Kit for Windows](https://sleuthkit.org/)  
   - Optional GUI: [Autopsy Forensic Browser](https://www.autopsy.com/)
 - **Test Data**: Disk image file (`disk.dd`, `disk.img`, `.E01`)
 
-## ARCHITECTURE DIAGRAM
-```mermaid
-flowchart TD
-    A[Disk Image / Physical Disk] --> B[mmls - Partition Analysis]
-    B --> C[fsstat - File System Metadata]
-    C --> D[fls - File Listing]
-    D --> E[icat - File Recovery]
-    E --> F[Recovered Data / Metadata Report]
-```
+## ARCHITECTURE DIAGRAM:
+
+<img width="413" height="755" alt="image" src="https://github.com/user-attachments/assets/342b7c62-24d1-45ab-bd23-4b1128288759" />
+
 ## DESIGN STEPS:
 ### Step 1:
 - Obtain or create a disk image file (e.g., disk.dd) to analyze.
